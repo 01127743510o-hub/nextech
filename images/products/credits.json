@@ -1,0 +1,354 @@
+[
+    {
+        "productId":  3,
+        "title":  "File:IBM Thinkpad R51.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:IBM_Thinkpad_R51.jpg",
+        "author":  "André Karwath aka Aka\n",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+        "productId":  4,
+        "title":  "File:Schenker VIA14 Laptop asv2021-01.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:Schenker_VIA14_Laptop_asv2021-01.jpg",
+        "author":  "A.Savin",
+        "license":  "FAL",
+        "licenseUrl":  "http://artlibre.org/licence/lal/en"
+    },
+    {
+        "productId":  5,
+        "title":  "File:Acer Aspire V3-772G-54208G50Makk.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:Acer_Aspire_V3-772G-54208G50Makk.jpg",
+        "author":  "Someone Not Awful",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+        "productId":  6,
+        "title":  "File:Laptop computer.jpeg",
+        "source":  "https://commons.wikimedia.org/wiki/File:Laptop_computer.jpeg",
+        "author":  "KK IN HK",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+        "productId":  7,
+        "title":  "File:Acer Aspire A515-51.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:Acer_Aspire_A515-51.jpg",
+        "author":  "Woofstarcat",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+        "productId":  8,
+        "title":  "File:Acer Aspire 8920.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:Acer_Aspire_8920.jpg",
+        "author":  "Georgy90",
+        "license":  "CC BY-SA 3.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+        "productId":  9,
+        "title":  "File:MSI laptop with English Wikipedia screenshot 20100614 (2).jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:MSI_laptop_with_English_Wikipedia_screenshot_20100614_(2).jpg",
+        "author":  "Kristoferb at English Wikipedia",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+        "productId":  10,
+        "title":  "File:Acer Aspire 4752 Laptop - 03.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:Acer_Aspire_4752_Laptop_-_03.jpg",
+        "author":  "CSR2Forever",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+        "productId":  11,
+        "title":  "File:Acer Aspire Switch 12 S (24109486459).jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:Acer_Aspire_Switch_12_S_(24109486459).jpg",
+        "author":  "Maurizio Pesce from Milan, Italia",
+        "license":  "CC BY 2.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by/2.0"
+    },
+    {
+        "productId":  14,
+        "title":  "File:Nokia Lumia 620.JPG",
+        "source":  "https://commons.wikimedia.org/wiki/File:Nokia_Lumia_620.JPG",
+        "author":  "shubs",
+        "license":  "CC BY-SA 3.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+        "productId":  15,
+        "title":  "File:IPhone 11 Product RED.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:IPhone_11_Product_RED.jpg",
+        "author":  "IToms",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+        "productId":  16,
+        "title":  "File:Fujitsu ARROWS-V F-04E. (8257535744).jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:Fujitsu_ARROWS-V_F-04E._(8257535744).jpg",
+        "author":  "MIKI Yoshihito from Sapporo City,Hokkaido., JAPAN",
+        "license":  "CC BY 2.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by/2.0"
+    },
+    {
+        "productId":  17,
+        "title":  "File:Samsung Galaxy S20.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S20.jpg",
+        "author":  "Danish971",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+        "productId":  18,
+        "title":  "File:Nokia N86 8MP - Front (Closed).jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:Nokia_N86_8MP_-_Front_(Closed).jpg",
+        "author":  "Beamish4",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+        "productId":  19,
+        "title":  "File:5 different Smartphones.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:5_different_Smartphones.jpg",
+        "author":  "Kskhh",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+        "productId":  20,
+        "title":  "File:Blackview A60 Smartphone Android mobile phone and folio case.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:Blackview_A60_Smartphone_Android_mobile_phone_and_folio_case.jpg",
+        "author":  "Acabashi",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+        "productId":  21,
+        "title":  "File:IPhone XS.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:IPhone_XS.jpg",
+        "author":  "Cullen Steber",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+        "productId":  22,
+        "title":  "File:IPhone 13 iPhone 4s frontside.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:IPhone_13_iPhone_4s_frontside.jpg",
+        "author":  "CGBR",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+        "productId":  23,
+        "title":  "File:IPhone SE Product RED Front.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:IPhone_SE_Product_RED_Front.jpg",
+        "author":  "Pixelatedfacealex",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+        "productId":  24,
+        "title":  "File:Samsung Android Smartphone.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:Samsung_Android_Smartphone.jpg",
+        "author":  "彭嘉傑 \u0026amp; Google",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+        "productId":  27,
+        "title":  "File:Headphones 1.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:Headphones_1.jpg",
+        "author":  "No machine-readable author provided. PJ assumed (based on copyright claims).",
+        "license":  "CC BY-SA 3.0",
+        "licenseUrl":  "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+        "productId":  28,
+        "title":  "File:House of Marley products.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:House_of_Marley_products.jpg",
+        "author":  "GoldVine5",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+        "productId":  30,
+        "title":  "File:Pixel Buds in charging case with product box.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:Pixel_Buds_in_charging_case_with_product_box.jpg",
+        "author":  "Robert Nelson from Tarpon Springs, Florida, USA",
+        "license":  "CC BY 2.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by/2.0"
+    },
+    {
+        "productId":  31,
+        "title":  "File:ActiveSound wireless earbuds by Hykker (POJM200483).jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:ActiveSound_wireless_earbuds_by_Hykker_(POJM200483).jpg",
+        "author":  "Warszawska róg Szerokiej w Tomaszowie Mazowieckim, w województwie łódzkim, PL, EU",
+        "license":  "Public domain",
+        "licenseUrl":  null
+    },
+    {
+        "productId":  32,
+        "title":  "File:Pixel Buds Pro, orange.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:Pixel_Buds_Pro,_orange.jpg",
+        "author":  "Mliu92",
+        "license":  "CC BY-SA 3.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+        "productId":  34,
+        "title":  "File:Smartwatch-828786.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:Smartwatch-828786.jpg",
+        "author":  "Crew",
+        "license":  "CC0",
+        "licenseUrl":  "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+        "productId":  35,
+        "title":  "File:Huawei Smartwatch Fit 2.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:Huawei_Smartwatch_Fit_2.jpg",
+        "author":  "D Eaketts",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+        "productId":  36,
+        "title":  "File:Huawei Smartwatch (Band 4).jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:Huawei_Smartwatch_(Band_4).jpg",
+        "author":  "TheArchivistMan",
+        "license":  "CC0",
+        "licenseUrl":  "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+        "productId":  37,
+        "title":  "File:Garmin Forerunner 55.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:Garmin_Forerunner_55.jpg",
+        "author":  "Melyanac",
+        "license":  "CC0",
+        "licenseUrl":  "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+        "productId":  38,
+        "title":  "File:LenovoWatch.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:LenovoWatch.jpg",
+        "author":  "Kārlis Dambrāns",
+        "license":  "CC BY 2.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by/2.0"
+    },
+    {
+        "productId":  39,
+        "title":  "File:Gaming PC-Setup - Astaroth- The Completed System.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:Gaming_PC-Setup_-_Astaroth-_The_Completed_System.jpg",
+        "author":  "Brian Wong",
+        "license":  "CC BY-SA 2.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    {
+        "productId":  40,
+        "title":  "File:Gaming computers (1).jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:Gaming_computers_(1).jpg",
+        "author":  "Notdjey",
+        "license":  "CC BY 2.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by/2.0"
+    },
+    {
+        "productId":  41,
+        "title":  "File:Thermaltake Meka G1.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:Thermaltake_Meka_G1.jpg",
+        "author":  "\nMorn",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+        "productId":  42,
+        "title":  "File:G502 Hero.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:G502_Hero.jpg",
+        "author":  "Spiileer",
+        "license":  "CC0",
+        "licenseUrl":  "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+        "productId":  43,
+        "title":  "File:Computer display, Rostov-on-Don, Russia.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:Computer_display,_Rostov-on-Don,_Russia.jpg",
+        "author":  "Vyacheslav Argenberg",
+        "license":  "CC BY 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by/4.0"
+    },
+    {
+        "productId":  44,
+        "title":  "File:External display connected by usb.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:External_display_connected_by_usb.jpg",
+        "author":  "Masahiko OHKUBO",
+        "license":  "CC BY 2.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by/2.0"
+    },
+    {
+        "productId":  46,
+        "title":  "File:PS4-Headset.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:PS4-Headset.jpg",
+        "author":  "Hama GmbH \u0026amp; Co KG",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+        "productId":  47,
+        "title":  "File:Logitech Red mouse on a mouse pad.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:Logitech_Red_mouse_on_a_mouse_pad.jpg",
+        "author":  "mycurrency.com",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+        "productId":  48,
+        "title":  "File:HP OMEN X 900 Gaming Desktop PC (cropped).jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:HP_OMEN_X_900_Gaming_Desktop_PC_(cropped).jpg",
+        "author":  "Maurizio Pesce",
+        "license":  "CC BY 2.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by/2.0"
+    },
+    {
+        "productId":  50,
+        "title":  "File:Apple iPad mini mit Retina Display - 5301.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:Apple_iPad_mini_mit_Retina_Display_-_5301.jpg",
+        "author":  "Amada44",
+        "license":  "CC BY-SA 3.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+        "productId":  51,
+        "title":  "File:2023 Amazon Kindle Paperwhite (2).jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:2023_Amazon_Kindle_Paperwhite_(2).jpg",
+        "author":  "Jacek Halicki",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+        "productId":  52,
+        "title":  "File:Apple iPad 11 gen. \u0026 Apple iPhone 16 (still in a box) (2025-12-02).jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:Apple_iPad_11_gen._%26_Apple_iPhone_16_(still_in_a_box)_(2025-12-02).jpg",
+        "author":  "Olgierd Rudak",
+        "license":  "CC0",
+        "licenseUrl":  "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+        "productId":  53,
+        "title":  "File:IPad 2 with Wikimedia related stickers.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:IPad_2_with_Wikimedia_related_stickers.jpg",
+        "author":  "Premeditated",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+        "productId":  54,
+        "title":  "File:IPad mini 7.jpg",
+        "source":  "https://commons.wikimedia.org/wiki/File:IPad_mini_7.jpg",
+        "author":  "茅野ふたば",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+]

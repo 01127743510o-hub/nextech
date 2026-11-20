@@ -1,356 +1,39 @@
+# NEXTECH
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+A bilingual Arabic/English technology storefront built with HTML, CSS, and JavaScript.
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+## Features
 
-    <meta name="description" content="NEXTECH - Discover premium technology products, electronics, and accessories.">
+- 64-product catalog with category and text filtering
+- English and Arabic interface with RTL support
+- Persistent cart with quantities and removal
+- Newsletter and contact form feedback
+- Responsive desktop, tablet, and mobile layout
+- Product and hero image fallbacks
+- Locally stored, real product photography for the product catalog
 
-    <meta name="theme-color" content="#080B14">
+## Run locally
 
-    <meta name="author" content="NEXORA">
+```powershell
+python -m http.server 5500
+```
 
-    <title>NEXTECH | Technology Store</title>
+Visit `http://localhost:5500`.
 
-    <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+The cart and forms are front-end demonstrations. Connect them to real APIs before production use.
+Each product has a distinct, locally stored photo named `images/products/product-<id>.jpg`; Commons attribution and license details are in `images/products/credits.json`.
 
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+### Accessory photo credits
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+The last ten accessory photos are individually matched to their product descriptions:
 
-</head>
-
-<body>
-
-    <!-- HEADER -->
-
-    <header id="home">
-
-        <div class="container">
-
-            <nav class="navbar">
-
-                <a href="#home" class="logo">
-                    NEX<span>TECH</span>
-                </a>
-
-                <div class="nav-links" id="nav-links">
-
-                    <a href="#home" data-i18n="home">Home</a>
-
-                    <a href="#categories" data-i18n="categories">Categories</a>
-
-                    <a href="#products" data-i18n="products">Products</a>
-
-                    <a href="#about" data-i18n="about">About</a>
-
-                    <a href="#contact" data-i18n="contact">Contact</a>
-
-                </div>
-
-                <div class="nav-actions">
-
-                    <button id="language-toggle" type="button">
-                        العربية
-                    </button>
-
-                    <button id="cart-button" type="button" aria-label="Shopping cart">
-                        <span>🛒</span>
-                        <span id="cart-count">0</span>
-                    </button>
-
-                    <button id="menu-toggle" type="button" aria-label="Open menu">
-                        ☰
-                    </button>
-
-                </div>
-
-            </nav>
-
-        </div>
-
-    </header>
-
-
-    <!-- HERO SECTION -->
-
-    <main>
-
-        <section class="hero">
-
-            <div class="container hero-content">
-
-                <div class="hero-text">
-
-                    <span class="hero-badge" data-i18n="heroBadge">
-                        NEXT GENERATION TECHNOLOGY
-                    </span>
-
-                    <h1 data-i18n="heroTitle">
-                        Discover The Future Of Technology
-                    </h1>
-
-                    <p data-i18n="heroDescription">
-                        Explore premium electronics and innovative
-                        technology designed for your lifestyle.
-                    </p>
-
-                    <a href="#products" class="primary-button" data-i18n="shopNow">
-                        Shop Now
-                    </a>
-
-                </div>
-
-                <div class="hero-image">
-
-                    <img
-                        src="images/hero-tech.png"
-                        alt="Premium technology products"
-                        fetchpriority="high"
-                    >
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- CATEGORIES SECTION -->
-
-        <section id="categories" class="categories section-padding">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <span data-i18n="explore">EXPLORE</span>
-
-                    <h2 data-i18n="categoriesTitle">
-                        Shop By Category
-                    </h2>
-
-                    <p data-i18n="categoriesDescription">
-                        Discover technology for every need.
-                    </p>
-
-                </div>
-
-                <div class="category-grid">
-
-                    <a href="#products" class="category-card" data-category="laptops">
-                        <div class="category-icon">💻</div>
-                        <h3 data-i18n="laptops">Laptops</h3>
-                    </a>
-
-                    <a href="#products" class="category-card" data-category="phones">
-                        <div class="category-icon">📱</div>
-                        <h3 data-i18n="phones">Smartphones</h3>
-                    </a>
-
-                    <a href="#products" class="category-card" data-category="headphones">
-                        <div class="category-icon">🎧</div>
-                        <h3 data-i18n="headphones">Headphones</h3>
-                    </a>
-
-                    <a href="#products" class="category-card" data-category="accessories">
-                        <div class="category-icon">⌚</div>
-                        <h3 data-i18n="accessories">Accessories</h3>
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- PRODUCTS SECTION -->
-
-        <section id="products" class="products section-padding">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <span data-i18n="featured">FEATURED COLLECTION</span>
-
-                    <h2 data-i18n="productsTitle">
-                        Featured Products
-                    </h2>
-
-                    <p data-i18n="productsDescription">
-                        Explore our selected technology products.
-                    </p>
-
-                </div>
-
-
-                <!-- PRODUCT FILTERS -->
-
-                <div class="product-filters">
-
-                    <button class="filter-button active" data-filter="all" data-i18n="all">
-                        All
-                    </button>
-
-                    <button class="filter-button" data-filter="laptops" data-i18n="laptops">
-                        Laptops
-                    </button>
-
-                    <button class="filter-button" data-filter="phones" data-i18n="phones">
-                        Smartphones
-                    </button>
-
-                    <button class="filter-button" data-filter="headphones" data-i18n="headphones">
-                        Headphones
-                    </button>
-
-                    <button class="filter-button" data-filter="accessories" data-i18n="accessories">
-                        Accessories
-                    </button>
-
-                </div>
-
-
-                <!-- SEARCH -->
-
-                <div class="product-search">
-
-                    <input
-                        type="search"
-                        id="product-search"
-                        placeholder="Search products..."
-                        data-i18n-placeholder="searchPlaceholder"
-                    >
-
-                </div>
-
-
-                <!-- PRODUCT GRID -->
-
-                <div class="product-grid" id="product-grid">
-
-                    <!-- PRODUCTS WILL BE ADDED USING JAVASCRIPT -->
-
-                </div>
-
-                <p id="no-products" class="no-products" hidden data-i18n="noProducts">
-                    No products found.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- ABOUT SECTION -->
-
-        <section id="about" class="about section-padding">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <span data-i18n="whoWeAre">WHO WE ARE</span>
-
-                    <h2 data-i18n="aboutTitle">
-                        Technology Made Simple
-                    </h2>
-
-                    <p data-i18n="aboutDescription">
-                        NEXTECH brings together innovation, quality,
-                        and modern technology in one place.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- NEWSLETTER SECTION -->
-
-        <section class="newsletter section-padding">
-
-            <div class="container">
-
-                <h2 data-i18n="newsletterTitle">
-                    Stay Updated
-                </h2>
-
-                <p data-i18n="newsletterDescription">
-                    Discover the latest technology and product updates.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- CONTACT SECTION -->
-
-        <section id="contact" class="contact section-padding">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <span data-i18n="getInTouch">GET IN TOUCH</span>
-
-                    <h2 data-i18n="contactTitle">
-                        Contact Us
-                    </h2>
-
-                    <p data-i18n="contactDescription">
-                        Have a question? We'd love to hear from you.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- FOOTER -->
-
-    <footer>
-
-        <div class="container">
-
-            <a href="#home" class="logo">
-                NEX<span>TECH</span>
-            </a>
-
-            <p data-i18n="footer">
-                © 2026 NEXTECH. All rights reserved.
-            </p>
-
-            <a href="https://01127743510o-hub.github.io/nexora/"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="brand-link">
-                Powered by NEXORA
-            </a>
-
-        </div>
-
-    </footer>
-
-
-    <!-- JAVASCRIPT -->
-
-    <script src="script.js"></script>
-
-</body>
-
-</html>
+- Charger: [Raimond Spekking](https://commons.wikimedia.org/wiki/File:USB_power_adapter_for_Apple_iPod,_Model_A1205,_by_Foxlink_Technology_Ltd-1048.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+- Wireless dock: [WrS.tm.pl](https://commons.wikimedia.org/wiki/File:Wireless_power_transfer_from_inductive_charging_pad_to_Deutsche_Telekom_T_Phone_Pro_5G.ogv), public domain.
+- Power bank: [Ilya Plekhanov](https://commons.wikimedia.org/wiki/File:Power_bank.JPG), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+- USB hub: [David Leo Veksler](https://commons.wikimedia.org/wiki/File:Various_USB-C_hubs_and_adapters_with_MacBook_Pro_(26550311179).jpg), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).
+- SSD: [Tony Webster](https://commons.wikimedia.org/wiki/File:Samsung_T5_Portable_External_SSD_(Solid_State_Drive)_(43544308485).jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/).
+- Speaker: [Beats](https://commons.wikimedia.org/wiki/File:Beats_By_Dr._Dre_Pill_Portable_Bluetooth_Speaker_Black_N2.jpg), CC0.
+- Travel backpack: [Pixel.la Free Stock Photos](https://commons.wikimedia.org/wiki/File:Clothes-travel-voyage-backpack_(24324553095).jpg), CC0.
+- Laptop stand: [Richardinsky](https://commons.wikimedia.org/wiki/File:Cozistyle_Stand_Sleeve.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+- Charging pad: [Seawhelan](https://commons.wikimedia.org/wiki/File:Wireless_Charging_Pad.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+- Docking station: [D-Kuru](https://commons.wikimedia.org/wiki/File:Delock_USB_m.2_NVMe_docking_station-oblique_FS_PNr%C2%B00912.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
