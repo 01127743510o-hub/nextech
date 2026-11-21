@@ -1,0 +1,13 @@
+{
+  "name": "aldamashqi-restaurant-admin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Arabic RTL restaurant management demo with a local SQLite API",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  }
+}

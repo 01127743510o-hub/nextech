@@ -1,39 +1,41 @@
-# NEXTECH
+# الدمشقي
 
-A bilingual Arabic/English technology storefront built with HTML, CSS, and JavaScript.
+نموذج أولي عربي RTL لإدارة فروع مطعم، مبني بـ HTML وCSS وJavaScript وNode.js مع SQLite محلية، دون حزم خارجية أو تكاملات مدفوعة.
 
-## Features
+## التشغيل المحلي
 
-- 64-product catalog with category and text filtering
-- English and Arabic interface with RTL support
-- Persistent cart with quantities and removal
-- Newsletter and contact form feedback
-- Responsive desktop, tablet, and mobile layout
-- Product and hero image fallbacks
-- Locally stored, real product photography for the product catalog
-
-## Run locally
+يتطلب Node.js 22.13 أو أحدث (للاستفادة من `node:sqlite`). من مجلد المشروع:
 
 ```powershell
-python -m http.server 5500
+npm.cmd start
 ```
 
-Visit `http://localhost:5500`.
+ثم افتح `http://127.0.0.1:5500`.
 
-The cart and forms are front-end demonstrations. Connect them to real APIs before production use.
-Each product has a distinct, locally stored photo named `images/products/product-<id>.jpg`; Commons attribution and license details are in `images/products/credits.json`.
+حساب التطوير المحلي:
 
-### Accessory photo credits
+- البريد: `demo@aldamashqi.local`
+- كلمة المرور: `damashqi-demo`
 
-The last ten accessory photos are individually matched to their product descriptions:
+تُخزّن البيانات في `.data/damashqi.sqlite`، ويُنشأ الملف والبيانات التجريبية تلقائياً عند أول تشغيل. ملفات قاعدة البيانات مستثناة من Git. لإعادة بيانات العرض من البداية، أوقف الخادم ثم احذف ملفات قاعدة البيانات الثلاثة في `.data` (`damashqi.sqlite` وملفي `-wal` و`-shm` إن وُجدا).
 
-- Charger: [Raimond Spekking](https://commons.wikimedia.org/wiki/File:USB_power_adapter_for_Apple_iPod,_Model_A1205,_by_Foxlink_Technology_Ltd-1048.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
-- Wireless dock: [WrS.tm.pl](https://commons.wikimedia.org/wiki/File:Wireless_power_transfer_from_inductive_charging_pad_to_Deutsche_Telekom_T_Phone_Pro_5G.ogv), public domain.
-- Power bank: [Ilya Plekhanov](https://commons.wikimedia.org/wiki/File:Power_bank.JPG), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
-- USB hub: [David Leo Veksler](https://commons.wikimedia.org/wiki/File:Various_USB-C_hubs_and_adapters_with_MacBook_Pro_(26550311179).jpg), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).
-- SSD: [Tony Webster](https://commons.wikimedia.org/wiki/File:Samsung_T5_Portable_External_SSD_(Solid_State_Drive)_(43544308485).jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/).
-- Speaker: [Beats](https://commons.wikimedia.org/wiki/File:Beats_By_Dr._Dre_Pill_Portable_Bluetooth_Speaker_Black_N2.jpg), CC0.
-- Travel backpack: [Pixel.la Free Stock Photos](https://commons.wikimedia.org/wiki/File:Clothes-travel-voyage-backpack_(24324553095).jpg), CC0.
-- Laptop stand: [Richardinsky](https://commons.wikimedia.org/wiki/File:Cozistyle_Stand_Sleeve.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
-- Charging pad: [Seawhelan](https://commons.wikimedia.org/wiki/File:Wireless_Charging_Pad.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
-- Docking station: [D-Kuru](https://commons.wikimedia.org/wiki/File:Delock_USB_m.2_NVMe_docking_station-oblique_FS_PNr%C2%B00912.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+## ما يتضمنه النموذج
+
+- تسجيل دخول بجلسة خادم وملف ارتباط `HttpOnly`، مع تقييد لمحاولات الدخول.
+- لوحة مؤشرات ومقارنة للفروع والفترات، وتبديل الفرع.
+- إدارة مهام التشغيل والحجوزات والمخزون عبر واجهات API وتخزين دائم محلي.
+- بيانات ثلاثة فروع ومحتوى مطعم توضيحي.
+
+المواقع والتقييمات وبيانات الاتصال مأخوذة من معلومات زوّد بها المستخدم ولم تُتحقق مستقلاً. جميع المبيعات والطلبات والإشغال والمهام والحجوزات والمخزون المعروض بيانات تجريبية ولا تمثل معاملات أو سجلات فعلية. لا يوجد اتصال بنظام نقاط بيع أو مدفوعات.
+
+## اختبار
+
+```powershell
+npm.cmd test
+```
+
+## حدود النسخة
+
+هذه نسخة عرض محلية وليست خدمة جاهزة للبيع أو للنشر العام. تتضمن مؤسسة تجريبية واحدة، ولا تتضمن التسجيل الذاتي، أو إنشاء مطاعم ومستخدمين وأدوارهم، أو استعادة كلمة المرور، أو مخزوناً مستقلاً لكل فرع، أو نسخاً احتياطية آلية. تحتاج الاستضافة الفعلية إلى موافقة المطعم وحسابه، وإعداد خادم آمن وقرص دائم لقاعدة SQLite والنسخ الاحتياطي ومراجعة تشغيلية وأمنية.
+
+للتشغيل الإنتاجي، يجب ضبط `NODE_ENV=production` و`ADMIN_EMAIL` و`ADMIN_PASSWORD` (كلمة مرور بطول 12 محرفاً على الأقل) ومتغيري `HOST` و`PORT` وفق بيئة الاستضافة. يرفض الخادم البدء في الإنتاج إذا غابت بيانات المدير، ويعطّل حساب التطوير الافتراضي. تُفعّل خاصية `Secure` لملف الارتباط في الإنتاج، لذا يلزم HTTPS. لا تُرفع قاعدة بيانات `.data` أو بيانات دخول التطوير.
